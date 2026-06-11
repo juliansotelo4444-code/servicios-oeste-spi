@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap');
+
+.why {
+  padding: 4rem 3rem;
+  background: #0d0d0d;
+  border-bottom: 1px solid #222;
+}
+
+.why-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 2.5rem;
+}
+
+.why-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #e8b400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.why-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0;
+  line-height: 1;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2px;
+  background: #1a1a1a;
+  border: 1px solid #1a1a1a;
+}
+
+.why-card {
+  background: #0d0d0d;
+  padding: 2rem 1.5rem;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.why-card:hover {
+  background: #111;
+}
+
+.why-number {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: #e8b400;
+  line-height: 1;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.why-card-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.why-card-desc {
+  font-family: 'Barlow', sans-serif;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .why {
+    padding: 3rem 1.5rem;
+  }
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap');
+
+.hero {
+  position: relative;
+  background: #0d0d0d;
+  overflow: hidden;
+  padding: 4rem 3rem 3.5rem;
+  border-bottom: 3px solid #e8b400;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(255,255,255,0.015) 40px, rgba(255,255,255,0.015) 41px),
+    repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(255,255,255,0.015) 40px, rgba(255,255,255,0.015) 41px);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 420px;
+  height: 100%;
+  background: linear-gradient(135deg, transparent 40%, rgba(232,180,0,0.06) 100%);
+  pointer-events: none;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.logoBox {
+  width: 56px;
+  height: 56px;
+  background: #e8b400;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.brandName {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.brandSub {
+  font-family: 'Barlow', sans-serif;
+  font-size: 11px;
+  color: #e8b400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+.title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 0.95;
+  margin: 0 0 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  position: relative;
+  z-index: 1;
+}
+
+.accent {
+  color: #e8b400;
+  display: block;
+}
+
+.desc {
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.65;
+  max-width: 480px;
+  margin: 0 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.badgeRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.badge {
+  font-family: 'Barlow', sans-serif;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.6);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 14px;
+  border-radius: 2px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.badge:first-child {
+  border-color: #e8b400;
+  color: #e8b400;
+}

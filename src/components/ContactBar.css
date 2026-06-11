@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&display=swap');
+
+.cb-footer {
+  background: #e8b400;
+  padding: 3rem;
+}
+
+.cb-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+}
+
+.cb-pretitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.4rem;
+}
+
+.cb-callout {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #0d0d0d;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.cb-grid {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.cb-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cb-item-label {
+  font-family: 'Barlow', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(0,0,0,0.45);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.cb-item-value {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0d0d0d;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 640px) {
+  .cb-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .cb-grid {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}

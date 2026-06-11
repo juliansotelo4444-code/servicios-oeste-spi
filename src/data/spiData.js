@@ -24,7 +24,7 @@ export const clients = [
 ]
 
 export const contact = {
-  phone: "11 2775-0112",
+  phone: "1127750112",
   email: "ventas@qualityflats.com.ar",
   address: "Carabobo 1730, Ituzaingó, Buenos Aires",
   rep: "Matias Catalan",
